@@ -1,5 +1,5 @@
-//
-//
+// Copyright (C) 2020
+// All rights reserved
 
 package labcodingstandards;
 
@@ -7,18 +7,21 @@ import java.util.Scanner;
 
 
 /**
- * @author
- *
+ * @author MARLONLINDAO
  */
 public class Calculator {	
 	
+	/**
+	 * CHECKSTYLE: OFF
+	 * */
 	public static void main(String[] args) {
+		
 		Scanner reader = new Scanner(System.in);
 		
         System.out.print("1. +\n2. -\n3. *\n4. /\nEnter an operator: ");
         
         char operator = reader.nextLine().charAt(0);
-        double First;
+        double first;
         double second;
         String input;
         
@@ -52,7 +55,10 @@ public class Calculator {
         System.out.printf(result);
 		reader.close();
 	}
-
+	
+	/**
+	 * CHECKSTYLE: ON
+	 * */
 	private String Operation(double first,double second,char operator) {
 		double result = 0;
 		switch(operator)
